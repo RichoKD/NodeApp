@@ -1,0 +1,54 @@
+<html>
+
+<head>
+    <title>
+        Quotes.ng
+    </title>
+    <style>
+        h1,
+        p {
+            padding: 9px;
+        }
+
+        input,
+        textarea,
+        button {
+            border: 1px solid #888;
+            padding: 9px;
+            min-width: 250px;
+            border-radius: 9px;
+        }
+
+        h1 {
+            font-weight: 300;
+        }
+    </style>
+
+
+    <body>
+        <center>
+
+            <h1>Quotes.ng</h1>
+            <p>
+
+                <ol>
+                    <% X.forEach(function(X) { %>
+                        <li>Quote:
+                            <%= X.id %>
+                                <br/> Text:
+                                <%= X.quote %>
+                                    <br/> Text:
+                                    <%= X.name %>
+                                        <div>==================</div>
+                        </li>
+                        <% }); %>
+                </ol>
+            </p>
+
+
+            <a href='http://localhost:7000'>Add Quotes</a>
+        </center>
+    </body>
+</head>
+
+</html>

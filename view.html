@@ -1,0 +1,50 @@
+<html>
+
+<head>
+    <title>
+        Quotes.ng
+    </title>
+    <style>
+        h1,
+        p {
+            padding: 9px;
+        }
+
+        input,
+        textarea,
+        button {
+            border: 1px solid #888;
+            padding: 9px;
+            min-width: 250px;
+            border-radius: 9px;
+        }
+
+        h1 {
+            font-weight: 300;
+        }
+    </style>
+
+
+    <body>
+        <center>
+            <form action="send" method="post">
+                <h1>Quotes.ng</h1>
+                <p>
+                    <input type="text" name="name" placeholder="Name">
+                </p>
+                <p>
+                    <textarea type="text" name="quotes" placeholder="Quotes"></textarea>
+                </p>
+                <p>
+                    <button type="submit">Send</button>
+                </p>
+
+
+            </form>
+
+            <a href='http://localhost:7000/read'>Read Quotes</a>
+        </center>
+    </body>
+</head>
+
+</html>
